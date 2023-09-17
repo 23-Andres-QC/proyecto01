@@ -70,7 +70,7 @@ void acciones::modificar(int codiG,int cant){
     if (pos!=-1) {
         cantVect[pos]=cant;
     } else {
-        cout << "C digo no encontrado en el archivo." << endl;
+        cout << "Codigo no encontrado en el archivo " << endl;
         return;
     }
     ofstream subir("data.txt");

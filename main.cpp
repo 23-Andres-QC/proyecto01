@@ -26,6 +26,7 @@ int main(){
     printf(" %s\n", u.c_str());
     cout <<"Presiona cualquier tecla para continuar..."<<endl;
     char tecla= _getch();
+    system("cls");
     do{
     cout<<"Que es lo que desea hacer mostrar,agregar,eliminar, modificar,salir: ";
     cin>>a;
@@ -68,6 +69,11 @@ void agregarA(){
     cin>>cant;
     acciones a(1,"agraga ","datos",1,1);
     a.agregar(cod,nombre,clase,cant);
+        MINI ver("codigos","nombre","clase","cantidad");
+        ver.show();
+        ver.load_producto();
+        ver.show_productos();
+
 }
 
 void modificar(){
@@ -78,6 +84,10 @@ void modificar(){
     cin>>cant;
     acciones b(2,"modificar ","datos",2,2);
     b.modificar(cod,cant);
+        MINI ver("codigos","nombre","clase","cantidad");
+        ver.show();
+        ver.load_producto();
+        ver.show_productos();
 }
 void eliminar (){
     int cod;
@@ -85,7 +95,8 @@ void eliminar (){
     cin>>cod;
     acciones x(2,"modificar ","datos",2,2);
     x.eliminar(cod);
-
-
-
+        MINI ver("codigos","nombre","clase","cantidad");
+        ver.show();
+        ver.load_producto();
+        ver.show_productos();
 }

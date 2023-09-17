@@ -18,4 +18,4 @@
 118 champu productos_de_cuidado_personal 11
 119 detergente productos_de_limpieza 36
 120 panales_para_bebes productos_para_bebes 27
-            
+            200 lapiz utiles 10222 mouse tecnologia 12
