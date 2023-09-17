@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1694985747 source:d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\src\mini.cpp
+	"MINI.h"
+
+1694985747 d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\include\mini.h
+	<vector>
+	<fstream>
+	"Record.h"
+
+1694985747 d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\include\record.h
+	<string>
+	<iostream>
+
+1694985747 source:d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\src\record.cpp
+	"Record.h"
+	<iostream>
+
+1694988258 source:d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\main.cpp
+	<iostream>
+	"Record.h"
+	"MINI.h"
+	"acciones.h"
+	<cstdio>
+	<string>
+	<fstream>
+	<conio.h>
+
+1694986868 d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\include\acciones.h
+	<iostream>
+	<vector>
+	<fstream>
+
+1694986934 source:d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\src\acciones.cpp
+	"acciones.h"
+
