@@ -1,21 +1,21 @@
 # depslib dependency file v1.0
-1694985747 source:d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\src\mini.cpp
+1695074102 source:d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\src\mini.cpp
 	"MINI.h"
 
-1694985747 d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\include\mini.h
+1695073500 d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\include\mini.h
 	<vector>
 	<fstream>
 	"Record.h"
 
-1694985747 d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\include\record.h
+1695074103 d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\include\record.h
 	<string>
 	<iostream>
 
-1694985747 source:d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\src\record.cpp
+1695074103 source:d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\src\record.cpp
 	"Record.h"
 	<iostream>
 
-1694991930 source:d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\main.cpp
+1695080254 source:d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\main.cpp
 	<iostream>
 	"Record.h"
 	"MINI.h"
@@ -25,11 +25,11 @@
 	<fstream>
 	<conio.h>
 
-1694986868 d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\include\acciones.h
+1695078517 d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\include\acciones.h
 	<iostream>
 	<vector>
 	<fstream>
 
-1694986934 source:d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\src\acciones.cpp
+1695080210 source:d:\ciclo 03\algoritmo y estructura de datos\clases y practicas\proyectos\proyecto01\src\acciones.cpp
 	"acciones.h"
 

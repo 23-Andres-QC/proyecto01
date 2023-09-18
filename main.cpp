@@ -21,9 +21,9 @@ int main(){
   *  *   *       *     *     *         **       *     *  *       *        *
   *   *  *       *     *     *          *       *     *    *      *      *
   *    * *****    *****    *****    ****        *     *     *       ****
-  )";
+                    BY> Andres and Ronal DEV)";
 
-    printf(" %s\n", u.c_str());
+    printf(" %s\n\n", u.c_str());
     cout <<"Presiona cualquier tecla para continuar..."<<endl;
     char tecla= _getch();
     system("cls");
@@ -38,7 +38,7 @@ int main(){
 void llamaacciones(string a){
 
     if(a=="mostrar"){
-        MINI ver("codigos","nombre","clase","cantidad");
+        MINI ver("codigos","nombre","clase","cantidad","precio");
         ver.show();
         ver.load_producto();
         ver.show_productos();
@@ -59,6 +59,7 @@ void agregarA(){
     int cod;
     string nombre,clase;
     int cant;
+    double preciO;
     cout<<"Mencioname el codigo: ";
     cin>>cod;
     cout<<"Mencioname el nombre:  ";
@@ -67,36 +68,47 @@ void agregarA(){
     cin>>clase;
     cout<<"Mencioname la cantidad de productos: ";
     cin>>cant;
-    acciones a(1,"agraga ","datos",1,1);
-    a.agregar(cod,nombre,clase,cant);
-        MINI ver("codigos","nombre","clase","cantidad");
+    cout<<"Mencione el precio del producto: ";
+    cin>>preciO;
+    acciones a;
+    a.agregar(cod,nombre,clase,cant,preciO);
+        MINI ver("codigos","nombre","clase","cantidad","precio");
         ver.show();
         ver.load_producto();
         ver.show_productos();
 
 }
 
-void modificar(){
+void eliminar(){
     int cant,cod;
-    cout<<"Menciona el codigo del producto a modificar:  "<<endl;
+    cout<<"Menciona el codigo del producto a eliminar:  "<<endl;
     cin>>cod;
-    cout<<"Menciona cual es la nueva cantidad del producto: "<<endl;
-    cin>>cant;
-    acciones b(2,"modificar ","datos",2,2);
-    b.modificar(cod,cant);
-        MINI ver("codigos","nombre","clase","cantidad");
+    acciones b;
+    b.eliminar(cod);
+        MINI ver("codigos","nombre","clase","cantidad","precio");
         ver.show();
         ver.load_producto();
         ver.show_productos();
 }
-void eliminar (){
-    int cod;
-    cout<<"Mencioname el codigo del producto a eliminar: ";
+void modificar (){
+    int cod,cant;
+    string desi;
+    cout<<"Mencioname el codigo del producto a modificar: ";
     cin>>cod;
-    acciones x(2,"modificar ","datos",2,2);
-    x.eliminar(cod);
-        MINI ver("codigos","nombre","clase","cantidad");
-        ver.show();
-        ver.load_producto();
-        ver.show_productos();
+    cout<<"Deseas aumentar o disminuir ";
+    cin>>desi;
+    cout<<"Mencioname cuanto: ";
+    cin>>cant;
+    acciones x;
+    if(desi=="aumentar"){
+        x.modificar(cod,cant);
+
+    }else{
+        x.modificar(cod,cant*-1);
+
+    }
+    MINI ver("codigos","nombre","clase","cantidad","precio");
+    ver.show();
+    ver.load_producto();
+    ver.show_productos();
 }

@@ -1,21 +1,51 @@
-101 leche_fresca lacteos 25
-102 pan_integral pan 15
-103 manzanas_gala frutas 30
-104 yogur_natural lacteos 12
-105 pollo_fresco carnes 40
-106 pasta_fusilli pastas 18
-107 salsa_de_tomate salsas_y_condimentos 22
-108 zanahorias verduras 37
-109 cereal_de_avena cereales 10
-110 aceite_de_oliva aceites_y_vinagres 28
-111 atun_en_lata conservas 34
-112 arroz_integral arroces 19
-113 galletas_de_chocolate galletas 8
-114 cafe_molido bebidas 42
-115 agua_mineral bebidas 16
-116 papel_higienico productos_de_papel 23
-117 jabon_de_manos productos_de_limpieza 31
-118 champu productos_de_cuidado_personal 11
-119 detergente productos_de_limpieza 36
-120 panales_para_bebes productos_para_bebes 27
-            200 lapiz utiles 10222 mouse tecnologia 12
+1 Leche Lacteos 10 2
+2 Pan Panaderia 20 1
+3 Huevos Lacteos 27 1
+4 Arroz Granos 15 2
+5 Pasta Granos 25 1
+6 Pollo Carnes 12 4
+7 Manzanas Frutas 40 0
+8 Platanos Frutas 35 0
+9 Papas Verduras 28 1
+10 Salsa_de_Tomate Conservas 10 1
+11 Atun_enlatado Conservas 18 2
+12 Yogur Lacteos 15 1
+13 Galletas Snacks 22 2
+14 Cereal Desayuno 20 3
+15 Queso Lacteos 10 3
+16 Salchichas Carnes 14 3
+17 Pan_integral Panaderia 16 2
+18 Frijoles_enlatados Conservas 25 1
+19 Aceite_de_cocina Aceites 8 4
+20 Lechuga Verduras 30 1
+21 Jugo_de_naranja Bebidas 24 2
+22 Cafe Bebidas 18 5
+23 Sopa_enlatada Conservas 14 1
+24 Panecillos Panaderia 28 1
+25 Zanahorias Verduras 32 0
+26 Mantequilla Lacteos 12 2
+27 Te Bebidas 20 3
+28 Uvas Frutas 18 2
+29 Miel Condimentos 8 4
+30 Cebollas Verduras 30 1
+31 Limones Frutas 36 0
+32 Salsa_de_soja Condimentos 16 2
+33 Pechuga_de_pavo Carnes 14 5
+34 Pan_de_molde Panaderia 20 1
+35 Cerveza Bebidas 24 6
+36 Fideos Granos 20 1
+37 Palomitas_de_maiz Snacks 18 1
+38 Salsa_picante Condimentos 12 1
+39 Pimientos Verduras 24 1
+40 Mermelada Conservas 10 2
+41 Helado Postres 16 3
+42 Pollo_asado Comida_preparada 8 7
+43 Champinones_enlatados Conservas 12 1
+44 Cereal_para_el_desayuno Desayuno 18 3
+45 Salmon Pescados 6 9
+46 Tostadas Panaderia 22 1
+47 Queso_crema Lacteos 10 2
+48 Papel_higienico Productos_de_limpieza 30 3
+49 Champu Cuidado_personal 14 4
+50 Papel_toalla Productos_de_limpieza 24 2
+51 Pasta-dental Cuidado_personal 12 2

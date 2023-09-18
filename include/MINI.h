@@ -8,17 +8,20 @@
 class MINI
 {
     public:
-        MINI(string codigo,string nombre,string tipo,string cantidad);
+        MINI(string codigo,string nombre,string tipo,string cantidad,string precio);
 
         void getcodigo(string cod_){this -> codigo=cod_;};
         void getnombre(string nomb_){this -> nombre=nomb_;};
         void gettipo(string tip_){this -> tipo=tip_;};
         void getcantidad(string cant_){this -> cantidad=cant_;};
+        void getprecio(string precio_){this -> precio=precio_;};
+
 
         string setcodigo(){return this -> codigo;};
         string setnombre(){return this -> nombre;};
         string settipo(){return this -> tipo;};
         string setcantidad(){return this -> cantidad;};
+        string setprecio(){return this -> precio;};
 
 
         void show();
@@ -32,6 +35,7 @@ class MINI
         string nombre;
         string tipo;
         string cantidad;
+        string precio;
         vector<Record> Lista;
 
 
