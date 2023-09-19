@@ -5,6 +5,7 @@
 #include <vector>
 #include <fstream>
 #include "Record.h"
+#include <windows.h>
 class MINI
 {
     public:
@@ -28,6 +29,7 @@ class MINI
         void load_producto(string dato="data.txt");
         void show_productos();
         void show_cantidades();
+        void setColor(int color);
         virtual ~MINI();
 
     private:

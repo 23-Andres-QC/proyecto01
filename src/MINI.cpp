@@ -10,8 +10,18 @@ MINI::MINI(string cod,string nomb,string tip_,string cant,string preci_){
         this -> cantidad=cant;
         this-> precio=preci_;
 }
+void MINI::setColor(int color){
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hConsole, color);
+}
 void MINI::show(){
-    cout<<this->codigo<<" "<<this->nombre<<" "<<this->tipo<<" "<<this->cantidad<<" "<<this->precio<<endl;
+    const char* rojo = "\x1b[31m";
+    const char* verde = "\x1b[32m";
+    const char* azul = "\x1b[34m";
+    const char* cyan = "\x1b[37m";
+    const char* magenta = "\x1b[35m";
+    const char* reset = "\x1b[0m";
+    cout<<rojo<<codigo<<reset<<" "<<verde<<nombre<<reset<<" "<<azul<<tipo<<reset<<" "<<cyan<<cantidad<<reset<<" "<<magenta<<precio<<reset<<endl;
 }
 void MINI::load_producto(string dato)
 {
