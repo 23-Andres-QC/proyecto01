@@ -26,45 +26,44 @@ enum MenuOption {
     Salir
 };
 
-void drawMenu(const std::vector<std::string>& options, int selectedOption) {
+void drawMenu(vector<string>& options, int cont) {
     system("cls");
     setColor(2);
-    cout<< "                           Selecciona una opción:"<<endl;
+    cout<< "                           Selecciona una opcion:"<<endl;
     for(int i=0; i<options.size();i++){
-        if (i==selectedOption){
-            cout<<"             > ";
+        if (i==cont){
+            cout<<"             >";
         } else {
-            cout<<"  ";
         }
             cout<<options[i]<<endl;
     }
 }
 
 int menuPrincipal(){
-    vector<std::string>menuOptions={
+    vector<string>menuOptions={
         "                           Mostrar",
         "                           Agregar",
         "                           Modificar",
         "                           Eliminar",
         "                           Salir"};
-    int selectedOption = 0;
+    int cont = 0;
     string a;
     while (true){
-        drawMenu(menuOptions, selectedOption);
+        drawMenu(menuOptions, cont);
         char tecla = _getch();
         switch (tecla){
             case 72: //arriba
-                if (selectedOption > 0){
-                    selectedOption--;
+                if (cont > 0){
+                    cont--;
                 }
                 break;
             case 80: //abajo
-                if (selectedOption<menuOptions.size()-1){
-                    selectedOption++;
+                if (cont<menuOptions.size()-1){
+                    cont++;
                 }
                 break;
             case 13: //Enter
-                switch (static_cast<MenuOption>(selectedOption)) {
+                switch (static_cast<MenuOption>(cont)) {
                     case Mostrar:
                         cout << "Seleccionaste Mostrar." <<endl;
                         llamaacciones(a);
@@ -85,8 +84,6 @@ int menuPrincipal(){
                         return 0;
                 }
                 break;
-            default:
-                break;
         }
     }
 }
@@ -95,7 +92,7 @@ int menuPrincipal(){
 
 int main() {
     setColor(6);
-    std::string u = R"(
+    string u = R"(
                ****   *****   ****     *****     ****     *****    ****         ****
               *   *  *       *           *      *           *     *    *      *      *
               *   *  *       *           *       **         *     *    *     *        *
@@ -112,34 +109,6 @@ int main() {
         char tecla = _getch();
 
     menuPrincipal(); // Llama a la función del menú principal
-
-
-
-    /*
-    string a;
-    setColor(6);
-    string u = R"(
-               ****   *****   ****     *****     ****     *****    ****         ****
-              *   *  *       *           *      *           *     *    *      *      *
-              *   *  *       *           *       **         *     *    *     *        *
-              ****   ****    *   ***     *        **        *     ****       *        *
-              *  *   *       *     *     *         **       *     *  *       *        *
-              *   *  *       *     *     *          *       *     *    *      *      *
-              *    * *****    *****    *****    ****        *     *     *       ****
-                                BY> Andres and Ronal DEV)";
-
-    printf(" %s\n\n", u.c_str());
-    setColor(9);
-            cout <<"                          Presiona cualquier tecla para continuar..."<<endl;
-            char tecla= _getch();
-            system("cls");
-    setColor(10);
-            do{
-            cout<<"Que es lo que desea hacer mostrar,agregar,eliminar, modificar,salir: ";
-            cin>>a;
-            llamaacciones(a);
-            }while(a!="a");
-            */
             return 0;
 
 }
@@ -148,24 +117,7 @@ void llamaacciones(string a){
         ver.show();
         ver.load_producto();
         ver.show_productos();
-    /*if(a=="mostrar"){
-        MINI ver("codigos","nombre","clase","cantidad","precio");
-        ver.show();
-        ver.load_producto();
-        ver.show_productos();
-    }else{
-        system("cls");
-    }
-    if (a=="agregar"){
-        agregarA();
-    }else if(a=="eliminar"){
-        eliminar();
-    }else if(a=="modificar"){
-        modificar();
-    }else{
-        cout<<"Accion no existe ";
-    }*/
-    cout << "                     Presiona la barra espaciadora para volver al menú...";
+    cout << "                     Presiona la barra espaciadora para volver al menu...";
     while (_getch() != 32) {
 }
 }
@@ -178,7 +130,7 @@ void agregarA(){
             do{
             cout<<"Mencioname el codigo: ";
             cin>>cod;
-            }while(cod<=0 || cod>=200);
+            }while(cod<=0 || cod>=999);
             cout<<"Mencioname el nombre:  ";
             cin>>nombre;
             cout<<"Mencioname la clase:  ";
@@ -193,7 +145,7 @@ void agregarA(){
         ver.show();
         ver.load_producto();
         ver.show_productos();
-      cout << "                     Presiona la barra espaciadora para volver al menú...";
+      cout << "                     Presiona la barra espaciadora para volver al menu...";
     while (_getch() != 32) {
 
 }
@@ -212,7 +164,7 @@ void eliminar(){
         ver.show();
         ver.load_producto();
         ver.show_productos();
-       cout << "                     Presiona la barra espaciadora para volver al menú...";
+       cout << "                     Presiona la barra espaciadora para volver al menu...";
     while (_getch() != 32) {
 }
 }
@@ -240,7 +192,7 @@ void modificar (){
     ver.show();
     ver.load_producto();
     ver.show_productos();
-    cout << "                     Presiona la barra espaciadora para volver al menú...";
+    cout << "                     Presiona la barra espaciadora para volver al menu...";
     while (_getch() != 32) {
 }
 }

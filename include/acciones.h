@@ -13,8 +13,6 @@ class acciones
         void eliminar(int fila);
         void modificar(int codiG,int cant);
         virtual ~acciones();
-
-
     private:
         vector<int> CodiVect;
         vector<int> cantVect;
